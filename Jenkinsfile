@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/adarshpoojary07/pipeline.git', branch: 'main'
+                git url: 'https://github.com/adarshpoojary07/Jupiter.git', branch: 'main'
             }
         }
         stage('Install Newman Reporter') {
