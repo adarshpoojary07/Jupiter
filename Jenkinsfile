@@ -25,7 +25,7 @@ pipeline {
       steps {
         // Run collection.json; adjust file names as necessary
         // Generate HTML report using htmlextra and write to newman/report.html
-        sh '''
+        bat '''
           mkdir -p newman
           newman run "8.API Chaining with token.postman_collection.json" \
             -e "postman_environment.json" \
