@@ -27,8 +27,8 @@ pipeline {
         // Generate HTML report using htmlextra and write to newman/report.html
         sh '''
           mkdir -p newman
-          newman run 8.API Chaining with token.postman_collection.json \
-            -e postman_environment.json \
+          newman run "8.API Chaining with token.postman_collection.json" \
+            -e "postman_environment.json" \
             -r cli,htmlextra,junit \
             --reporter-htmlextra-export "E:/Study_Material/POSTMAN/POSTMAN Collections/newman/report.html" \
             --reporter-junit-export "E:/Study_Material/POSTMAN/POSTMAN Collections/newman/report1.html"
