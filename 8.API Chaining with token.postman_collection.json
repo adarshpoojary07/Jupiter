@@ -96,7 +96,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"/*pm.test(\"Value of json fields\",()=>{\r",
+							"/*pm.test(\"Value  of json fields\",()=>{\r",
 							"var jsonData=pm.response.json();  //to capture Response of json\r",
 							"\r",
 							"pm.expect(jsonData.id).to.eql(pm.environment.get(\"id\"));       //Comparing data with POST request\r",
