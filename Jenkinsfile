@@ -30,8 +30,8 @@ pipeline {
           newman run "8.API Chaining with token.postman_collection.json" \
             -e "postman_environment.json" \
             -r cli,htmlextra,junit \
-            --reporter-htmlextra-export "newman/bike.html" \
-            --reporter-junit-export "newman/car.xml"
+            --reporter-htmlextra-export "newman/bikes.html" \
+            --reporter-junit-export "newman/cars.xml"
         '''
       }
       // fail build if Newman exit code indicates failures (default behavior)
